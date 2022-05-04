@@ -39,7 +39,6 @@ router.get("/:id", async (req, res) => {
 router.post("/", (req, res) => {
   /* req.body should look like this...
     {
-      category_id: 6,
       product_name: "Basketball",
       price: 200.00,
       stock: 3,
@@ -103,11 +102,11 @@ router.put("/:id", (req, res) => {
         ProductTag.bulkCreate(newProductTags),
       ]);
     })
-    .then((updatedProductTags) => res.json(updatedProductTags));
-  // .catch((err) => {
-  //   // console.log(err);
-  //   res.status(400).json(err);
-  // });
+    .then((updatedProductTags) => res.json(updatedProductTags))
+    .catch((err) => {
+      // console.log(err);
+      res.status(400).json(err);
+    });
 });
 
 router.delete("/:id", async (req, res) => {

@@ -19,7 +19,7 @@ Run 'npm install' in the command line of the built in terminal, create the datab
 
 ## Tests/Walkthrough Video
 
-https://drive.google.com/file/d/1Qg2xDRBOJLAGLg919MBetBs69ro8_PCd/view
+https://drive.google.com/file/d/17ewr4-1S3Q4FNuZufEMp7ov8Q2zp4byh/view
 
 ## License
 
